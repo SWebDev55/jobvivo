@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="./assets/js/jquery.min.js"></script>
+	<title>Job Vivo</title>
+</head>
+<body>
+
+	<!-- header -->
+	<header class="bg-white shadow py-2 bg-green-100">
+		<div class="main-box max-w-7xl m-auto flex justify-between items-center">
+			<div class="open-menu text-2xl hidden" onclick="openNav();">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="logo">
+				<img src="./assets/img/logo-green.png" alt="">
+			</div>
+			<div class="menu flex items-center relative" id="myNav">
+				<div class="close-menu text-2xl w-full p-5 text-center bg-gray-100 text-black hidden closebtn" onclick="closeNav();">
+					<i class="fa fa-arrow-left"></i>
+				</div>
+				<ul>
+					<li class="inline-block"><a href="#" class="block text-lg text-blue-900 px-5 py-2">Home</a></li>
+					<li class="inline-block"><a href="#" class="block text-lg text-blue-900 px-5 py-2">Employer</a></li>
+					<li class="inline-block"><a href="#" class="block text-lg text-blue-900 px-5 py-2">Candidate</a></li>
+					<li class="inline-block"><a href="#" class="block text-lg text-blue-900 px-5 py-2">Extra</a></li>
+					<li class="inline-block"><a href="#" class="block text-lg text-blue-900 px-5 py-2">Elements</a></li>
+				</ul>
+				<div class="user flex justify-around items-center w-64">
+					<div class="login text-center px-3 py-2 rounded bg-green-500 w-28 text-white">
+						<a href="#"><i class="fa fa-user"></i>&nbsp;Login</a>
+					</div>
+					<div class="register text-center px-3 py-2 rounded bg-green-500 w-28 text-white">
+						<a href="#"><i class="fa fa-user"></i>&nbsp;Sign up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- banner -->
+	<div class="banner bg-green-100">
+		<div class="main-box max-w-7xl m-auto">
+			<div class="box flex justify-between items-center">
+				<div class="text-banner p-20">
+					<h1 class="text-5xl font-bold text-blue-900">Searching <span class="text-green-600">for a job?</span> Find the job that fit your life</h1>
+					<div class="form py-5 w-full inline-block">
+						<input type="text" placeholder="Skills, Designation, Companies" class="p-5 w-1/2 float-left border-0 outline-0">
+						<div class="drop w-1/2 float-left">
+							<div class="location w-1/2 p-5 bg-white float-left text-center border-l-2">
+								All Country
+							</div>
+							<div class="btn w-1/2 float-left p-5 bg-green-600 text-center text-white text-md">
+								<a href="#">FIND JOB</a>
+							</div>
+						</div>
+					</div>
+					<div class="feature-banner grid grid-cols-12 gap-3">
+						<div class="box col-span-3">
+							<h1 class="text-2xl">Featured<br>Employers</h1>
+						</div>
+						<div class="box col-span-3 bg-white rounded p-2 flex items-center">
+							<img src="./assets/img/c-2.png" alt="" class="w-14">
+							<div class="text">
+								<h6 class="text-md font-bold">Google Ltd</h6>
+								<p class="text-sm text-green-700">3 Jobs</p>
+							</div>
+						</div>
+						<div class="box col-span-3 bg-white rounded p-2 flex items-center">
+							<img src="./assets/img/c-7.png" alt="" class="w-14">
+							<div class="text">
+								<h6 class="text-md font-bold">Asian Inc</h6>
+								<p class="text-sm text-green-700">4 Jobs</p>
+							</div>
+						</div>
+						<div class="box col-span-3 bg-white rounded p-2 flex items-center">
+							<img src="./assets/img/c-4.png" alt="" class="w-14">
+							<div class="text">
+								<h6 class="text-md font-bold">Atlantic Inc</h6>
+								<p class="text-sm text-green-700">7 Jobs</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- blog-1 -->
+	<div class="blog-1 max-w-7xl m-auto pt-5">
+		<h1 class="text-5xl font-bold text-center">Browse <span class="text-green-500">Hot Jobs</span></h1>
+		<p class="text-center text-md text-gray-500 py-2">Browse 200+ Top Jobs In Your Local City.</p>
+		<div class="grid grid-cols-12 pt-10">
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border p-2 rounded-xl">
+					<div class="top flex justify-between items-center">
+						<p class="w-32 rounded-full text-center p-1 bg-green-100 text-green-500 border-green-500 border">FULL TIME</p>
+						<a href="#" class="text-2xl text-pink-600"><i class="fa fa-heart"></i></a>
+					</div>
+					<div class="center py-5">
+						<img src="./assets/img/c-1.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Product Redesign</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+					</div>
+					<div class="bottom p-2 rounded-full border-green-500 w-32 m-auto border text-center hover:bg-green-500 transition-all duration-500">
+						<a href="#">Browse Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border p-2 rounded-xl">
+					<div class="top flex justify-between items-center">
+						<p class="w-32 rounded-full text-center p-1 bg-green-100 text-green-500 border-green-500 border">FULL TIME</p>
+						<a href="#" class="text-2xl text-pink-600"><i class="fa fa-heart"></i></a>
+					</div>
+					<div class="center py-5">
+						<img src="./assets/img/c-2.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Product Redesign</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+					</div>
+					<div class="bottom p-2 rounded-full border-green-500 w-32 m-auto border text-center hover:bg-green-500 transition-all duration-500">
+						<a href="#">Browse Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border p-2 rounded-xl">
+					<div class="top flex justify-between items-center">
+						<p class="w-32 rounded-full text-center p-1 bg-green-100 text-green-500 border-green-500 border">FULL TIME</p>
+						<a href="#" class="text-2xl text-pink-600"><i class="fa fa-heart"></i></a>
+					</div>
+					<div class="center py-5">
+						<img src="./assets/img/c-3.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Product Redesign</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+					</div>
+					<div class="bottom p-2 rounded-full border-green-500 w-32 m-auto border text-center hover:bg-green-500 transition-all duration-500">
+						<a href="#">Browse Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border p-2 rounded-xl">
+					<div class="top flex justify-between items-center">
+						<p class="w-32 rounded-full text-center p-1 bg-green-100 text-green-500 border-green-500 border">FULL TIME</p>
+						<a href="#" class="text-2xl text-pink-600"><i class="fa fa-heart"></i></a>
+					</div>
+					<div class="center py-5">
+						<img src="./assets/img/c-4.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Product Redesign</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+					</div>
+					<div class="bottom p-2 rounded-full border-green-500 w-32 m-auto border text-center hover:bg-green-500 transition-all duration-500">
+						<a href="#">Browse Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border p-2 rounded-xl">
+					<div class="top flex justify-between items-center">
+						<p class="w-32 rounded-full text-center p-1 bg-green-100 text-green-500 border-green-500 border">FULL TIME</p>
+						<a href="#" class="text-2xl text-pink-600"><i class="fa fa-heart"></i></a>
+					</div>
+					<div class="center py-5">
+						<img src="./assets/img/c-5.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Product Redesign</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+					</div>
+					<div class="bottom p-2 rounded-full border-green-500 w-32 m-auto border text-center hover:bg-green-500 transition-all duration-500">
+						<a href="#">Browse Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border p-2 rounded-xl">
+					<div class="top flex justify-between items-center">
+						<p class="w-32 rounded-full text-center p-1 bg-green-100 text-green-500 border-green-500 border">FULL TIME</p>
+						<a href="#" class="text-2xl text-pink-600"><i class="fa fa-heart"></i></a>
+					</div>
+					<div class="center py-5">
+						<img src="./assets/img/c-6.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Product Redesign</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+					</div>
+					<div class="bottom p-2 rounded-full border-green-500 w-32 m-auto border text-center hover:bg-green-500 transition-all duration-500">
+						<a href="#">Browse Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border p-2 rounded-xl">
+					<div class="top flex justify-between items-center">
+						<p class="w-32 rounded-full text-center p-1 bg-green-100 text-green-500 border-green-500 border">FULL TIME</p>
+						<a href="#" class="text-2xl text-pink-600"><i class="fa fa-heart"></i></a>
+					</div>
+					<div class="center py-5">
+						<img src="./assets/img/c-7.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Product Redesign</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+					</div>
+					<div class="bottom p-2 rounded-full border-green-500 w-32 m-auto border text-center hover:bg-green-500 transition-all duration-500">
+						<a href="#">Browse Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border p-2 rounded-xl">
+					<div class="top flex justify-between items-center">
+						<p class="w-32 rounded-full text-center p-1 bg-green-100 text-green-500 border-green-500 border">FULL TIME</p>
+						<a href="#" class="text-2xl text-pink-600"><i class="fa fa-heart"></i></a>
+					</div>
+					<div class="center py-5">
+						<img src="./assets/img/c-8.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Product Redesign</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+					</div>
+					<div class="bottom p-2 rounded-full border-green-500 w-32 m-auto border text-center hover:bg-green-500 transition-all duration-500">
+						<a href="#">Browse Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- blog-2 -->
+	<div class="blog-2 max-w-7xl m-auto pt-5 mt-5">
+		<h1 class="text-5xl font-bold text-center">Top Employers <span class="text-green-500">Of The Month</span></h1>
+		<p class="text-center text-md text-gray-500 py-2">BWorld Top Agency & Employesr With 7000+ Jobs</p>
+		<div class="grid grid-cols-12 pt-10">
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border-2 rounded-xl">
+					<div class="center py-5">
+						<img src="./assets/img/c-1.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Apple</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+						<p class="text-center py-5 text-sm text-gray-600">3 OPEN POSITION</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border-2 rounded-xl">
+					<div class="center py-5">
+						<img src="./assets/img/c-2.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Google Inc</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+						<p class="text-center py-5 text-sm text-gray-600">5 OPEN POSITION</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border-2 rounded-xl">
+					<div class="center py-5">
+						<img src="./assets/img/c-3.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Core PHP</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+						<p class="text-center py-5 text-sm text-gray-600">4 OPEN POSITION</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border-2 rounded-xl">
+					<div class="center py-5">
+						<img src="./assets/img/c-4.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Indiso Ltd</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+						<p class="text-center py-5 text-sm text-gray-600">8 OPEN POSITION</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border-2 rounded-xl">
+					<div class="center py-5">
+						<img src="./assets/img/c-5.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Likvi Soft</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+						<p class="text-center py-5 text-sm text-gray-600">6 OPEN POSITION</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border-2 rounded-xl">
+					<div class="center py-5">
+						<img src="./assets/img/c-6.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Divargo Pvt</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+						<p class="text-center py-5 text-sm text-gray-600">9 OPEN POSITION</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border-2 rounded-xl">
+					<div class="center py-5">
+						<img src="./assets/img/c-7.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">MicroSoft Ltd</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+						<p class="text-center py-5 text-sm text-gray-600">2 OPEN POSITION</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-3 p-5">
+				<div class="box bg-white shadow border-2 rounded-xl">
+					<div class="center py-5">
+						<img src="./assets/img/c-8.png" alt="" class="w-20 m-auto">
+						<h1 class="text-center text-lg">Sivtrixi Inc</h1>
+						<p class="text-center text-sm">2708 Scenic Way, IL 62373</p>
+						<p class="text-center py-5 text-sm text-gray-600">7 OPEN POSITION</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- blog-3 -->
+	<div class="bg-1">
+		<div class="blur-bg">
+			<div class="blog-3 max-w-7xl m-auto py-20 mt-5">
+				<h1 class="text-center text-5xl text-white font-bold">What Our Client Says</h1>
+				<p class="text-md text-white text-center py-3">At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis.</p>
+				<div class="grid grid-cols-12 gap-10 mt-10">
+					<div class="col-span-4">
+						<div class="box bg-white shadow border-2 rounded-xl px-10 py-5">
+							<div class="top flex items-center">
+								<img src="./assets/img/client-1.jpg" alt="" class="rounded-full w-20 object-contain bg-white p-2 shadow border-2">
+								<div class="text-top pl-5">
+									<h1 class="text-md font-bold">Adam Gillworm</h1>
+									<p class="text-sm">Envato Market</p>
+									<ul>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div class="text-detail py-5 text-md">
+								<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Qui Blanditiis Praesentium Voluptatum Deleniti.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-span-4">
+						<div class="box bg-white shadow border-2 rounded-xl px-10 py-5">
+							<div class="top flex items-center">
+								<img src="./assets/img/client-2.jpg" alt="" class="rounded-full w-20 object-contain bg-white p-2 shadow border-2">
+								<div class="text-top pl-5">
+									<h1 class="text-md font-bold">Lily Adviliam</h1>
+									<p class="text-sm">Drizvato Designer</p>
+									<ul>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div class="text-detail py-5 text-md">
+								<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Qui Blanditiis Praesentium Voluptatum Deleniti.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-span-4">
+						<div class="box bg-white shadow border-2 rounded-xl px-10 py-5">
+							<div class="top flex items-center">
+								<img src="./assets/img/client-3.jpg" alt="" class="rounded-full w-20 object-contain bg-white p-2 shadow border-2">
+								<div class="text-top pl-5">
+									<h1 class="text-md font-bold">Swan Advarm</h1>
+									<p class="text-sm">Drizvato Manager</p>
+									<ul>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+										<li class="inline-block"><i class="fa fa-star text-xs text-yellow-500"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div class="text-detail py-5 text-md">
+								<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Qui Blanditiis Praesentium Voluptatum Deleniti.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- blog-4 -->
+	<div class="bg-2 bg-green-500">
+		<div class="blog-4 max-w-7xl m-auto py-10">
+			<h1 class="text-center text-5xl text-white font-bold">What Our Client Says</h1>
+			<p class="text-md text-white text-center py-3">At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis.</p>
+			<div class="main-box p-20">
+				<div class="bg-green-300 rounded-full p-2">
+					<form action="#" class="relative">
+						<input type="text" placeholder="Enter Your Email" class="p-5 rounded-full px-16 w-full">
+						<div class="absolute top-1 left-0 w-full flex justify-between items-center">
+							<div class="px-5">
+								<i class="fa-solid fa-envelope text-xl"></i>
+							</div>
+							<button class="p-4 mx-1 bg-green-600 rounded-full w-40">Subcrebe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<footer class="bg-green-100">
+		<div class="main-box max-w-7xl m-auto py-5">
+			<div class="grid grid-cols-12 gap-2">
+				<div class="col-span-3">
+					<h1 class="text-green-600 font-bold text-lg">Feature Job</h1>
+					<ul class="p-0 mt-3">
+						<li class="py-2"><a href="#" class="text-md">Browse Jobs</a></li>
+						<li class="py-2"><a href="#" class="text-md">Premium MBA Jobs</a></li>
+						<li class="py-2"><a href="#" class="text-md">Access Database</a></li>
+						<li class="py-2"><a href="#" class="text-md">Manage Responses</a></li>
+						<li class="py-2"><a href="#" class="text-md">Report a Problem</a></li>
+						<li class="py-2"><a href="#" class="text-md">Mobile Site</a></li>
+						<li class="py-2"><a href="#" class="text-md">Jobs by Skill</a></li>
+					</ul>
+				</div>
+				<div class="col-span-3">
+					<h1 class="text-green-600 font-bold text-lg">Feature Job</h1>
+					<ul class="p-0 mt-3">
+						<li class="py-2"><a href="#" class="text-md">Browse Jobs</a></li>
+						<li class="py-2"><a href="#" class="text-md">Premium MBA Jobs</a></li>
+						<li class="py-2"><a href="#" class="text-md">Access Database</a></li>
+						<li class="py-2"><a href="#" class="text-md">Manage Responses</a></li>
+						<li class="py-2"><a href="#" class="text-md">Report a Problem</a></li>
+						<li class="py-2"><a href="#" class="text-md">Mobile Site</a></li>
+						<li class="py-2"><a href="#" class="text-md">Jobs by Skill</a></li>
+					</ul>
+				</div>
+				<div class="col-span-3">
+					<h1 class="text-green-600 font-bold text-lg">Feature Job</h1>
+					<ul class="p-0 mt-3">
+						<li class="py-2"><a href="#" class="text-md">Browse Jobs</a></li>
+						<li class="py-2"><a href="#" class="text-md">Premium MBA Jobs</a></li>
+						<li class="py-2"><a href="#" class="text-md">Access Database</a></li>
+						<li class="py-2"><a href="#" class="text-md">Manage Responses</a></li>
+						<li class="py-2"><a href="#" class="text-md">Report a Problem</a></li>
+						<li class="py-2"><a href="#" class="text-md">Mobile Site</a></li>
+						<li class="py-2"><a href="#" class="text-md">Jobs by Skill</a></li>
+					</ul>
+				</div>
+				<div class="col-span-3">
+					<h1 class="text-green-600 font-bold text-lg">Follow Us</h1>
+					<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis.At Vero Eos.</p>
+					<ul class="m-0 pt-5">
+						<li class="inline-block"><a href="#" class="block"><i class="flex justify-center items-center border rounded-full bg-green-300 hover:bg-green-400 hover:text-white transition-all duration-500 w-10 h-10 fab fa-facebook"></i></a></li>
+						<li class="inline-block"><a href="#" class="block"><i class="flex justify-center items-center border rounded-full bg-green-300 hover:bg-green-400 hover:text-white transition-all duration-500 w-10 h-10 fab fa-instagram"></i></a></li>
+						<li class="inline-block"><a href="#" class="block"><i class="flex justify-center items-center border rounded-full bg-green-300 hover:bg-green-400 hover:text-white transition-all duration-500 w-10 h-10 fab fa-line"></i></a></li>
+						<li class="inline-block"><a href="#" class="block"><i class="flex justify-center items-center border rounded-full bg-green-300 hover:bg-green-400 hover:text-white transition-all duration-500 w-10 h-10 fab fa-twitter"></i></a></li>
+						<li class="inline-block"><a href="#" class="block"><i class="flex justify-center items-center border rounded-full bg-green-300 hover:bg-green-400 hover:text-white transition-all duration-500 w-10 h-10 fab fa-telegram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./assets/js/custom.js"></script>
+</body>
+</html>

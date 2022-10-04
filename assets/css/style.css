@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.bg-1{
+    background: url(../img/slider-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.blur-bg{
+    background-color: #0000006c;
+}
+.bg-2{
+    background: url(../img/bg-new.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* for small mobile */
+@media (min-width: 320px) and (max-width: 480px){
+    header .main-box{
+        width: 100%;
+        padding: 10px !important;
+        justify-content: left;
+    }
+    header .main-box .logo{
+        margin: auto;
+    }
+    header .main-box .open-menu{
+        display: block;
+    }
+    header .main-box .menu{
+        position: fixed;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.2s;
+    }
+    header .main-box .menu .close-menu{
+        display: block;
+    }
+    header .main-box .menu ul{
+        margin: 0;
+        padding-top: 20px;
+    }
+    header .main-box .menu ul li{
+        display: block;
+    }
+    header .main-box .menu .user{
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+    }header .main-box .menu .user .login,
+    header .main-box .menu .user .register{
+        margin: 10px 0px;
+    }
+    .banner .main-box{
+        width: 100%;
+        padding: 0px 10px !important;
+    }
+    .banner .main-box .box{
+        display: block;
+    }
+    .banner .main-box .box .text-banner{
+        width: 100%;
+        padding: 0px !important;
+    }
+    .banner .main-box .box .text-banner h1{
+        font-size: 30px;
+    }
+    .banner .main-box .box .text-banner .form input,
+    .banner .main-box .box .text-banner .form .drop{
+        width: 100%;
+        margin: 0px;
+        padding: 10px !important;
+    }
+    
+    .banner .main-box .box .text-banner .form .drop .location,
+    .banner .main-box .box .text-banner .form .drop .btn{
+        width: 50%;
+        margin: 0px;
+        padding: 10px !important;
+    }
+    .feature-banner .box h1{
+        font-size: 13px !important;
+    }
+    .feature-banner .box img{
+        width: 30px;
+    }
+    .feature-banner .box h6{
+        font-size: 9px;
+    }
+    .feature-banner .box p{
+        font-size: 9px;
+    }
+
+    .blog-1,
+    .blog-2,
+    .blog-3,
+    .blog-4{
+        width: 100%;
+        padding: 10px !important;
+        margin: 0px !important;
+    }
+    .blog-1 h1,
+    .blog-2 h1,
+    .blog-3 h1,
+    .blog-4 h1{
+        font-size: 28px;
+    }
+    .blog-1 .grid,
+    .blog-2 .grid,
+    .blog-3 .grid{
+        display: inline-block;
+        padding: 0px !important;
+        width: 100%;
+    }
+    .blog-1 .grid .col-span-3,
+    .blog-2 .grid .col-span-3,
+    .blog-3 .grid .col-span-4{
+        width: 90% !important;
+        padding: 0px !important;
+        margin: 10px auto;
+    }
+
+    .blog-4 .main-box{
+        padding: 0px !important;
+    }
+    .blog-4 .main-box button{
+        width: 100px;
+    }
+    footer .main-box{
+        width: 100%;
+        padding: 10px !important;
+    }
+    footer .main-box .grid{
+        display: inline-block;
+    }
+    footer .main-box .grid .col-span-3{
+        width: 50%;
+        float: left;
+    }
+}
+
+
+/* for mobile */
+@media (min-width: 481px) and (max-width: 767px){
+    header .main-box{
+        width: 100%;
+        padding: 10px !important;
+        justify-content: left;
+    }
+    header .main-box .logo{
+        margin: auto;
+    }
+    header .main-box .open-menu{
+        display: block;
+    }
+    header .main-box .menu{
+        position: fixed;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.2s;
+    }
+    header .main-box .menu .close-menu{
+        display: block;
+    }
+    header .main-box .menu ul{
+        margin: 0;
+        padding-top: 20px;
+    }
+    header .main-box .menu ul li{
+        display: block;
+    }
+    header .main-box .menu .user{
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+    }header .main-box .menu .user .login,
+    header .main-box .menu .user .register{
+        margin: 10px 0px;
+    }
+    .banner .main-box{
+        width: 100%;
+        padding: 0px 10px !important;
+    }
+    .banner .main-box .box .text-banner{
+        width: 100%;
+        padding: 20px 0px !important;
+    }
+    .banner .main-box .box .text-banner h1{
+        font-size: 20px;
+    }
+    .banner .main-box .box .text-banner .form .location,
+    .banner .main-box .box .text-banner .form .btn,
+    .banner .main-box .box .text-banner input{
+        font-size: 12px;
+    }
+    .feature-banner .box h1{
+        font-size: 10px !important;
+    }
+    .feature-banner .box img{
+        width: 30px;
+    }
+    .feature-banner .box h6{
+        font-size: 10px;
+    }
+    .feature-banner .box p{
+        font-size: 13px;
+    }
+
+    .blog-1,
+    .blog-2,
+    .blog-3,
+    .blog-4{
+        width: 100%;
+        padding: 10px !important;
+        margin: 0px !important;
+    }
+    .blog-1 h1,
+    .blog-2 h1,
+    .blog-3 h1,
+    .blog-4 h1{
+        font-size: 28px;
+    }
+    .blog-1 .grid,
+    .blog-2 .grid,
+    .blog-3 .grid{
+        display: inline-block;
+        padding: 0px !important;
+        width: 100%;
+    }
+    .blog-1 .grid .col-span-3,
+    .blog-2 .grid .col-span-3{
+        width: 50% !important;
+        padding: 5px !important;
+        margin: 0;
+        float: left;
+    }
+    .blog-3 .grid .col-span-4{
+        width: 50% !important;
+        padding: 5px !important;
+        margin: 0;
+        float: left;
+    }
+    .blog-3 .grid .col-span-4 .box{
+        padding: 5px !important;
+    }
+    .blog-3 .grid .col-span-4 .box .text-top h1{
+        font-size: 18px;
+    }
+    .blog-3 .grid .col-span-4 .box .text-top p{
+        font-size: 10px;
+    }
+
+    .blog-4 .main-box{
+        padding: 0px !important;
+    }
+    .blog-4 .main-box button{
+        width: 100px;
+    }
+    footer .main-box{
+        width: 100%;
+        padding: 10px !important;
+    }
+    footer .main-box .grid{
+        display: inline-block;
+    }
+    footer .main-box .grid .col-span-3{
+        width: 50%;
+        float: left;
+    }
+}
+
+
+/* for tablate */
+@media (min-width: 768px) and (max-width: 1024px){
+    header .main-box .menu ul li a{
+        padding: 5px;
+        font-size: 15px;
+    }
+    header .user{
+        width: 210px;
+    }
+    header .user .login,
+    header .user .register{
+        width: 100px;
+    }
+    .banner .main-box{
+        width: 100%;
+        padding: 0px 10px !important;
+    }
+    .banner .main-box .box .text-banner{
+        width: 100%;
+        padding: 20px;
+    }
+    .banner .main-box .box .text-banner h1{
+        font-size: 30px;
+    }
+    .feature-banner .box h1{
+        font-size: 20px !important;
+    }
+    .feature-banner .box img{
+        width: 50px;
+    }
+    .feature-banner .box h6{
+        font-size: 15px;
+    }
+    .feature-banner .box p{
+        font-size: 13px;
+    }
+    
+    .blog-1,
+    .blog-2,
+    .blog-3,
+    .blog-4{
+        width: 100%;
+        padding: 10px !important;
+        margin: 0px !important;
+    }
+    .blog-1 h1,
+    .blog-2 h1,
+    .blog-3 h1,
+    .blog-4 h1{
+        font-size: 28px;
+    }
+    .blog-1 .grid,
+    .blog-2 .grid,
+    .blog-3 .grid{
+        display: inline-block;
+        padding: 0px !important;
+        width: 100%;
+    }
+    .blog-1 .grid .col-span-3,
+    .blog-2 .grid .col-span-3{
+        width: 33.3% !important;
+        padding: 5px !important;
+        margin: 0;
+        float: left;
+    }
+    .blog-3 .grid .col-span-4{
+        width: 33.3% !important;
+        padding: 5px !important;
+        margin: 0;
+        float: left;
+    }
+    .blog-3 .grid .col-span-4 .box{
+        padding: 5px !important;
+    }
+    .blog-3 .grid .col-span-4 .box .text-top h1{
+        font-size: 15px;
+    }
+    .blog-3 .grid .col-span-4 .box .text-top p{
+        font-size: 10px;
+    }
+
+    .blog-4 .main-box{
+        padding: 0px !important;
+    }
+    .blog-4 .main-box button{
+        width: 100px;
+    }
+    footer .main-box{
+        width: 100%;
+        padding: 10px !important;
+    }
+    footer .main-box .grid{
+        display: inline-block;
+    }
+    footer .main-box .grid .col-span-3{
+        width: 33.3%;
+        float: left;
+    }
+}
+
+
+/* for laptop */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
