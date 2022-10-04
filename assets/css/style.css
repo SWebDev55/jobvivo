@@ -83,7 +83,7 @@ header{
     }
     .banner .main-box .box .text-banner{
         width: 100%;
-        padding: 0px !important;
+        padding: 10px 0px !important;
     }
     .banner .main-box .box .text-banner h1{
         font-size: 30px;
